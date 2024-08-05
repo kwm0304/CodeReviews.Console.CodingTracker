@@ -4,12 +4,12 @@ namespace CodingTracker.kwm0304.Utils;
 
 public class Validator
 {
-    internal static string ConvertDateTimeToString(DateTime time)
+    public static string ConvertDateTimeToString(DateTime time)
     {
         return time.ToString("yyyy-MM-dd HH:mm:ss");
     }
 
-    internal static int ConvertTimeToInt(TimeSpan time)
+    public static int ConvertTimeToInt(TimeSpan time)
     {
         return (int)time.TotalSeconds;
     }
@@ -18,7 +18,7 @@ public class Validator
         return DateTime.ParseExact(dateStr, "yyyy-MM-dd HH:mm:ss", null);
     }
 
-    internal static int ToDays(DateRange range)
+    public static int ToDays(DateRange range)
     {
         return range switch
         {
@@ -29,7 +29,7 @@ public class Validator
         };
     }
 
-    internal static DateRange ToDateRange(int range)
+    public static DateRange ToDateRange(int range)
     {
         return range switch
         {
