@@ -13,7 +13,7 @@ public class Validator
     {
         return (int)time.TotalSeconds;
     }
-    internal static DateTime ConvertTextToDateTime(string dateStr)
+    public static DateTime ConvertTextToDateTime(string dateStr)
     {
         return DateTime.ParseExact(dateStr, "yyyy-MM-dd HH:mm:ss", null);
     }
